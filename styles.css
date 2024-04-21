@@ -1,0 +1,352 @@
+
+
+:root {
+    --primary: white;
+    --primary-light: #000000;
+    --secondary: black;
+    --secondary-light: #ffffff;
+    --background: linear-gradient(#000000, #030A17);
+    --background-light: #ffffff;
+    --accent: #576C96; 
+    --accent-hover: #52648b;
+}
+
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    scroll-padding-top: 6rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: system-ui;
+    background: var(--background);
+    background-repeat: no-repeat;
+    color: var(--primary);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    background: var(--secondary);
+    padding: 20px 10px;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 60%; 
+    gap: 1.5rem;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--primary);
+    list-style: none;
+    white-space: nowrap;
+    font-size: 1.2rem;
+}
+
+.button-contact-nav {
+    padding: 0.5rem 1.7rem 0.7rem 1.7rem;
+    border-radius: 15px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.button-contact-nav:hover {
+    opacity: 95%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 15%;
+}
+
+.section-welcome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap: 2rem;
+}
+
+.section-welcome h1 {
+    font-size: 4.5rem;
+    text-align: center;
+    text-wrap: balance
+}
+
+.section-welcome p {
+    font-size: 1.5rem;
+    text-align: center;
+    opacity: 70%;
+}
+
+.buttons {
+    display: flex;
+    margin-top: 1rem;
+    gap: 1rem;
+}
+
+.button-contact {
+    padding: 0.5rem 1.7rem 0.7rem 1.7rem;
+    border-radius: 15px;
+    background-color: var(--primary);
+    color: var(--secondary);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.button-contact:hover {
+    opacity: 95%;
+}
+
+.button-github {
+    padding: 0.5rem 1.7rem 0.7rem 1.7rem;
+    border-radius: 15px;
+    background-color: var(--accent);
+    color: var(--primary);
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.button-github:hover {
+    background-color: var(--accent-hover);
+}
+
+/* Nouveau design pour la section Projets avec animations et mouvements */
+
+/* Nouveau design pour la section Projets avec ajustements */
+
+/* CSS pour la section Projets */
+
+.section-projects h1 {
+    font-size: 3.5rem;
+    margin-bottom: 2rem;
+}
+
+.section-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    padding-top: 25px;
+}
+
+.project-tiles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.project-tile {
+    width: 300px;
+    height: 315px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.project-tile:hover {
+    transform: scale(1.05);
+}
+
+.project-tile h4 {
+    font-size: 1.2rem; /* Ajuster la taille du titre */
+    margin-bottom: 10px;
+}
+
+.project-tile-text {
+    padding: 1.5rem;
+    background-color: #fff;
+    border-radius: 0 0 15px 15px;
+    text-align: center;
+}
+
+.project-tile-text h2 {
+    font-size: 1.5rem; /* Ajuster la taille du sous-titre */
+    margin-bottom: 10px;
+}
+
+.project-tile-text p {
+    opacity: 0.7;
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+.project-tile .buttons {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.project-tile .buttons a {
+    padding: 0.5rem 2rem;
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: var(--primary);
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.project-tile .buttons a:hover {
+    background-color: darken(var(--primary), 10%);
+}
+
+.projects-text {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 1.1rem;
+    opacity: 0.7;
+}
+
+.projects-text a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: column;
+    margin: 15rem 15% 4rem 15%;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+@media screen and (max-width: 1300px) {
+  main {
+    margin: 0 10%;
+  }
+  .project-tiles {
+    flex-direction: column;
+    margin-top: 2rem;
+    gap: 2rem;
+  }
+  footer {
+    margin: 10rem 10% 4rem 10%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+    nav ul {
+    display: none;
+   }
+   .section-welcome {
+    margin: 3rem 0;
+   }
+   .section-welcome h1 {
+    font-size: 3rem;
+   }
+  .footer-content {
+    flex-direction: column-reverse;
+    gap: 2rem;
+   }
+   .footer-links {
+    flex-direction: row;
+    justify-content: center;
+   }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background: var(--background-light);
+        color: var(--primary-light);
+    }
+    nav {
+        background: var(--secondary-light);
+    }
+    nav img {
+        filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7500%) hue-rotate(233deg) brightness(96%) contrast(104%)
+    }
+    nav ul li a {
+        color: var(--primary-light);
+    }
+    .button-contact-nav {
+        background: var(--primary-light);
+        color: var(--secondary-light);
+    }
+    .button-contact-nav:hover {
+        opacity: 90%;
+    }
+    .button-contact {
+        background: var(--primary-light);
+        color: var(--secondary-light);
+    }
+    .button-contact:hover {
+        opacity: 90%;
+    }
+    .project-tile img {
+        border: 3px solid rgba(0, 0, 0, 0.4);
+    }
+    .project-tile-text {
+        border: 3px solid rgba(0, 0, 0, 0.4);
+        border-top: none;
+    }
+    .project-tile .buttons a {
+        color: var(--primary-light);
+        border: 3px solid rgba(0, 0, 0, 0.4);
+    }
+    .projects-text a {
+        color: var(--primary-light);
+    }
+    .footer-links a {
+        color: var(--primary-light);
+    }
+    .footer-links a img{
+        filter: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(7500%) hue-rotate(233deg) brightness(96%) contrast(104%);
+    }
+}
+
+
